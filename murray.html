@@ -1,0 +1,86 @@
+
+<html lang="en-US">
+<head profile="http://www.w3.org/2005/10/profile">
+
+
+<link rel="icon" href="/favicon.png" type="image/png" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<style type="text/css">
+	
+		#tape {
+			background: transparent url(images/bill3.gif) 0 0 no-repeat;
+			position: absolute;
+			top: 150px;
+			left: 65px;
+			width: 75px;
+			height: 172px;
+			z-index: 2000;
+			cursor: pointer;
+		}
+	</style>
+	
+	<!-- IE6 fixes are found in styles/ie6.css -->
+	<!--[if lte IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+	
+	<script src="scripts/jquery-1.3.2.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery-ui-1.7.2.spritely.custom.min.js" type="text/javascript"></script>
+	<script src="scripts/jquery.spritely-0.4.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+
+		(function($) {
+			$(document).ready(function() {
+				
+			
+				$('#tape')
+					.sprite({fps: 1, no_of_frames: 1})
+					.spRandom({top: 70, left: 100, right: 100, bottom: 340, speed: 8000, pause:600 })
+					
+					.activeOnClick()
+					.active();
+				 $('#tape').sprite({fps: 1, no_of_frames: 1}).activeOnClick().active();
+               $('body').flyToTap(); 
+				
+				
+			
+				
+			});
+		})(jQuery);
+	
+	</script>
+    
+
+  <title>VHSFLIX</title>
+  <META name="description" content="VHSFLIX"><META name="keywords" content="Movie Rental">
+</head>
+
+<body style="background-attachment: fixed; background-repeat: no-repeat; background-position:center; background-color:#8bb884 " background="images/bg.jpg">
+
+<div align="center">
+<img src="images/bm.gif"    alt="VHSFLIX" width="584" height="534" border="0" usemap="#Map2">
+<map name="Map2">
+  <area shape="rect" coords="333,454,514,514" href="http://vhsflix.cz.cc/">
+</map>
+<map name="Map">
+  
+</map>
+</div>
+<div id="tape"></div>
+</body>
+
+
+</html>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-22666764-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
